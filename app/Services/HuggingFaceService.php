@@ -7,9 +7,9 @@ use Illuminate\Support\Facades\Log;
 
 class HuggingFaceService
 {
-    protected string $apiKey;
-    protected string $chatModel;
-    protected string $embeddingModel;
+    protected ?string $apiKey = null;
+    protected ?string $chatModel = null;
+    protected ?string $embeddingModel = null;
     protected ?string $lastFallback = null;
 
     public function __construct()
