@@ -1,0 +1,43 @@
+=== GOOGLE ADS - AUTO PARTS UK ===
+
+--- HEADLINES (3 × 30 chars) ---
+1. UK Auto Parts Guaranteed
+2. Buy Car Parts Online Cheap
+3. Fast Delivery Auto Parts UK
+
+--- LONG HEADLINE (90 chars) ---
+Auto Parts UK - Huge Stock, Low Prices, Fast Delivery Across the United Kingdom
+
+--- DESCRIPTIONS (2 × 90 chars) ---
+1. Genuine & compatible auto parts. Engines, brakes, body parts. Secure payment. Order online today!
+2. Honda, Jeep, VW, Peugeot parts & more. Pro quality at the best price. Shipped within 24h.
+
+--- BUSINESS NAME ---
+Auto Parts UK
+
+--- SITELINKS ---
+Sitelink 1: Honda Parts
+  Description: Genuine Honda parts & accessories
+
+Sitelink 2: Jeep Parts
+  Description: Jeep parts & spares online
+
+Sitelink 3: Volkswagen Parts
+  Description: VW parts - Huge selection
+
+Sitelink 4: Engine Parts
+  Description: Engines & engine components
+
+Sitelink 5: Peugeot Parts
+  Description: Peugeot parts - Low prices
+
+Sitelink 6:
+  Description: Brakes & Suspension Parts
+
+--- CALL TO ACTION ---
+Shop Now
+
+--- IMAGES ---
+- 1 landscape image (1.91:1)
+- 1 square image (1:1)
+- 1 square logo

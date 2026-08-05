@@ -1,0 +1,13 @@
+{
+  "name": "rockauto-scraper",
+  "version": "1.0.0",
+  "description": "Scraper for RockAuto product data",
+  "scripts": {
+    "install-puppeteer": "npm install puppeteer",
+    "scrape": "node rockauto-scraper.js",
+    "import": "php ../artisan products:import"
+  },
+  "dependencies": {
+    "puppeteer": "^24.0.0"
+  }
+}
