@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://auto-part-uk.service-etranger.fr/sitemap.xml
+Sitemap: https://sellerie-super-confort.com/sitemap.xml
