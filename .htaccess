@@ -11,6 +11,11 @@
     RewriteCond %{REQUEST_URI} !^/images/proxy
     RewriteRule ^images/(.*)$ public/images/$1 [L]
 
+    # Serve any static file that exists inside public/ (assets referenced by URL path)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{DOCUMENT_ROOT}/public/%{REQUEST_URI} -f
+    RewriteRule ^(.+)$ public/$1 [L]
+
     RewriteCond %{REQUEST_FILENAME} -f
     RewriteRule ^(app|bootstrap|config|database|lang|resources|routes|tests|vendor|\.env) - [F,L]
 
