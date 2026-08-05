@@ -1,7 +1,39 @@
 {
-  "_fonts-C9MNnjVw.css": {
-    "file": "assets/fonts-C9MNnjVw.css",
-    "src": "_fonts-C9MNnjVw.css"
+  "_cormorant-garamond-400-normal-B-1hWBU7.woff2": {
+    "file": "assets/cormorant-garamond-400-normal-B-1hWBU7.woff2",
+    "src": "_cormorant-garamond-400-normal-B-1hWBU7.woff2"
+  },
+  "_cormorant-garamond-400-normal-B7YtguxJ.woff": {
+    "file": "assets/cormorant-garamond-400-normal-B7YtguxJ.woff",
+    "src": "_cormorant-garamond-400-normal-B7YtguxJ.woff"
+  },
+  "_cormorant-garamond-500-normal-BsRWmXhO.woff2": {
+    "file": "assets/cormorant-garamond-500-normal-BsRWmXhO.woff2",
+    "src": "_cormorant-garamond-500-normal-BsRWmXhO.woff2"
+  },
+  "_cormorant-garamond-500-normal-zIXX3Q-H.woff": {
+    "file": "assets/cormorant-garamond-500-normal-zIXX3Q-H.woff",
+    "src": "_cormorant-garamond-500-normal-zIXX3Q-H.woff"
+  },
+  "_cormorant-garamond-600-normal-2CBVLo0M.woff": {
+    "file": "assets/cormorant-garamond-600-normal-2CBVLo0M.woff",
+    "src": "_cormorant-garamond-600-normal-2CBVLo0M.woff"
+  },
+  "_cormorant-garamond-600-normal-Co1r35X9.woff2": {
+    "file": "assets/cormorant-garamond-600-normal-Co1r35X9.woff2",
+    "src": "_cormorant-garamond-600-normal-Co1r35X9.woff2"
+  },
+  "_cormorant-garamond-700-normal-DajfzrDU.woff2": {
+    "file": "assets/cormorant-garamond-700-normal-DajfzrDU.woff2",
+    "src": "_cormorant-garamond-700-normal-DajfzrDU.woff2"
+  },
+  "_cormorant-garamond-700-normal-O25Qpphb.woff": {
+    "file": "assets/cormorant-garamond-700-normal-O25Qpphb.woff",
+    "src": "_cormorant-garamond-700-normal-O25Qpphb.woff"
+  },
+  "_fonts-BMnS6S4k.css": {
+    "file": "assets/fonts-BMnS6S4k.css",
+    "src": "_fonts-BMnS6S4k.css"
   },
   "_instrument-sans-400-normal-D1W7dsQl.woff": {
     "file": "assets/instrument-sans-400-normal-D1W7dsQl.woff",
@@ -28,7 +60,7 @@
     "src": "_instrument-sans-600-normal-B9e8oLYv.woff"
   },
   "resources/css/app.css": {
-    "file": "assets/app-CbUAmuYL.css",
+    "file": "assets/app-CKd1wp1x.css",
     "name": "app",
     "names": [
       "app.css"
