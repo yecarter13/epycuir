@@ -9,6 +9,20 @@
     @csrf
     @if($product) @method('PUT') @endif
 
+    @if($errors->any())
+    <div class="mb-6 p-4 bg-red-50 border border-red-200 rounded-xl">
+        <div class="flex items-center gap-2 mb-2">
+            <svg class="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
+            <span class="text-sm font-semibold text-red-700">Veuillez corriger les erreurs ci-dessous :</span>
+        </div>
+        <ul class="list-disc list-inside text-sm text-red-600 space-y-1">
+            @foreach($errors->all() as $error)
+            <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+    @endif
+
     <div class="flex items-center justify-between mb-6 pb-4 border-b border-stable-100">
         <h2 class="text-lg font-bold text-stable-900">{{ $product ? 'Modifier le produit' : 'Nouveau produit' }}</h2>
         <span class="text-xs text-stable-400 bg-stable-50 px-2.5 py-1 rounded-lg">Sellerie Super Confort AI</span>
@@ -17,11 +31,13 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
         <div>
             <label class="block text-sm font-medium text-stable-900 mb-1.5">Nom du produit <span class="text-cta">*</span></label>
-            <input type="text" name="name" id="productName" value="{{ old('name', $product?->name) }}" required class="w-full px-4 py-2.5 border border-stable-200 rounded-xl text-sm focus:outline-none focus:border-safety transition-all">
+            <input type="text" name="name" id="productName" value="{{ old('name', $product?->name) }}" required class="w-full px-4 py-2.5 border rounded-xl text-sm focus:outline-none focus:border-safety transition-all {{ $errors->has('name') ? 'border-red-400 bg-red-50' : 'border-stable-200' }}">
+            @error('name') <p class="text-xs text-red-500 mt-1">{{ $message }}</p> @enderror
         </div>
         <div>
             <label class="block text-sm font-medium text-stable-900 mb-1.5">SKU <span class="text-stable-400 text-xs font-normal">(auto si vide)</span></label>
-            <input type="text" name="sku" value="{{ old('sku', $product?->sku) }}" class="w-full px-4 py-2.5 border border-stable-200 rounded-xl text-sm focus:outline-none focus:border-safety transition-all" placeholder="Laissez vide pour générer automatiquement">
+            <input type="text" name="sku" value="{{ old('sku', $product?->sku) }}" class="w-full px-4 py-2.5 border rounded-xl text-sm focus:outline-none focus:border-safety transition-all {{ $errors->has('sku') ? 'border-red-400 bg-red-50' : 'border-stable-200' }}" placeholder="Laissez vide pour générer automatiquement">
+            @error('sku') <p class="text-xs text-red-500 mt-1">{{ $message }}</p> @enderror
             <p class="text-xs text-stable-400 mt-1">Code de référence unique du produit</p>
         </div>
     </div>
@@ -41,7 +57,8 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
         <div>
             <label class="block text-sm font-medium text-stable-900 mb-1.5">Prix (&euro;) <span class="text-cta">*</span></label>
-            <input type="number" step="0.01" min="0" name="price" id="productPrice" value="{{ old('price', $product?->price) }}" required class="w-full px-4 py-2.5 border border-stable-200 rounded-xl text-sm focus:outline-none focus:border-safety transition-all">
+            <input type="number" step="0.01" min="0" name="price" id="productPrice" value="{{ old('price', $product?->price) }}" required class="w-full px-4 py-2.5 border rounded-xl text-sm focus:outline-none focus:border-safety transition-all {{ $errors->has('price') ? 'border-red-400 bg-red-50' : 'border-stable-200' }}">
+            @error('price') <p class="text-xs text-red-500 mt-1">{{ $message }}</p> @enderror
         </div>
         <div>
             <label class="block text-sm font-medium text-stable-900 mb-1.5">Ancien prix</label>
@@ -355,7 +372,7 @@ document.getElementById('generateAiBtn')?.addEventListener('click', function() {
         if (data.meta_title) { document.getElementById('metaTitle').value = data.meta_title; filled++; }
         if (data.meta_description) { document.getElementById('metaDescription').value = data.meta_description; filled++; }
 
-        successEl.className = 'mt-2 p-2.5 bg-green-50 border border-green-200 rounded-lg text-green-700 text-xs flex items-center gap-2';
+        successEl.className = 'mt-2 p-2.5 bg-stable-50 border border-stable-200 rounded-lg text-safety-dark text-xs flex items-center gap-2';
         successEl.innerHTML = '<svg class="w-3.5 h-3.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg> Terminé ! ' + filled + ' champ' + (filled > 1 ? 's' : '') + ' rempli' + (filled > 1 ? 's' : '') + '.';
         successEl.classList.remove('hidden');
         setTimeout(() => { successEl.classList.add('hidden'); }, 5000);

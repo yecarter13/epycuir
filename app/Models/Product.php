@@ -59,11 +59,21 @@ class Product extends Model
     protected static function booted(): void
     {
         static::creating(function (self $product) {
-            if (empty($product->slug)) {
+            $baseSlug = Str::slug($product->name);
+            $slug = $baseSlug;
+            $counter = 1;
+            while (static::where('slug', $slug)->exists()) {
+                $slug = $baseSlug . '-' . $counter++;
+            }
+            $product->slug = $slug;
+        });
+
+        static::updating(function (self $product) {
+            if ($product->isDirty('name')) {
                 $baseSlug = Str::slug($product->name);
                 $slug = $baseSlug;
                 $counter = 1;
-                while (static::where('slug', $slug)->exists()) {
+                while (static::where('slug', $slug)->where('id', '!=', $product->id)->exists()) {
                     $slug = $baseSlug . '-' . $counter++;
                 }
                 $product->slug = $slug;

@@ -47,7 +47,6 @@ class ProductController extends Controller
             'meta_description' => 'nullable|string',
         ]);
 
-        $data['slug'] = Str::slug($data['name']);
         $data['is_new'] = $request->boolean('is_new');
         $data['is_active'] = $request->boolean('is_active');
         if (empty($data['sku'])) {
@@ -100,7 +99,6 @@ class ProductController extends Controller
             'meta_description' => 'nullable|string',
         ]);
 
-        $data['slug'] = Str::slug($data['name']);
         $data['is_new'] = $request->boolean('is_new');
         $data['is_active'] = $request->boolean('is_active');
         if (empty($data['sku'])) {

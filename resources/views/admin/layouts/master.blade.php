@@ -8,14 +8,19 @@
 </head>
 <body class="font-sans antialiased bg-stable-50">
     <div class="min-h-screen flex">
-        <aside class="w-64 bg-stable-900 min-h-screen flex-shrink-0 hidden lg:block">
+        <aside id="admin-sidebar" class="w-64 bg-stable-900 min-h-screen flex-shrink-0 hidden lg:block fixed inset-y-0 left-0 z-40 lg:relative lg:translate-x-0 -translate-x-full transition-transform duration-300" >
             <div class="p-5 border-b border-stable-700">
-                <a href="{{ route('admin.dashboard') }}" class="flex items-center gap-2.5">
-                    <div class="w-8 h-8 bg-safety rounded-lg flex items-center justify-center">
-                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
-                    </div>
-                    <span class="text-lg font-bold text-white">Sellerie<span class="text-safety"> Super Confort</span> <span class="text-xs text-stable-400 font-normal">Admin</span></span>
-                </a>
+                <div class="flex items-center justify-between">
+                    <a href="{{ route('admin.dashboard') }}" class="flex items-center gap-2.5">
+                        <div class="w-8 h-8 bg-safety rounded-lg flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+                        </div>
+                        <span class="text-lg font-bold text-white">Sellerie<span class="text-safety"> Super Confort</span> <span class="text-xs text-stable-400 font-normal">Admin</span></span>
+                    </a>
+                    <button id="close-sidebar" class="lg:hidden text-stable-400 hover:text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                    </button>
+                </div>
             </div>
             <nav class="p-4 space-y-1">
                 <a href="{{ route('admin.dashboard') }}" class="flex items-center gap-3 px-4 py-2.5 text-sm text-stable-200 hover:text-white hover:bg-stable-800 rounded-lg transition-all {{ request()->routeIs('admin.dashboard') ? 'text-white bg-stable-800' : '' }}">
@@ -53,11 +58,18 @@
             </nav>
         </aside>
 
+        <div id="sidebar-overlay" class="fixed inset-0 bg-black/50 z-30 hidden lg:hidden" onclick="toggleSidebar()"></div>
+
         <main class="flex-1">
             <header class="bg-white border-b border-stable-100 px-6 py-4 flex items-center justify-between">
-                <h1 class="text-xl font-bold text-stable-900">@yield('title', 'Tableau de bord')</h1>
                 <div class="flex items-center gap-3">
-                    <span class="text-sm text-stable-500">{{ auth()->user()?->name ?? 'Admin' }}</span>
+                    <button id="open-sidebar" class="lg:hidden text-stable-600 hover:text-stable-900">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                    </button>
+                    <h1 class="text-xl font-bold text-stable-900">@yield('title', 'Tableau de bord')</h1>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="text-sm text-stable-500 hidden sm:inline">{{ auth()->user()?->name ?? 'Admin' }}</span>
                     @auth
                     <form method="POST" action="{{ route('logout') }}">
                         @csrf
@@ -68,12 +80,25 @@
             </header>
             <div class="p-6">
                 @if(session('success'))
-                <div class="mb-4 p-4 bg-green-50 border border-green-200 rounded-xl text-green-700 text-sm">{{ session('success') }}</div>
+                <div class="mb-4 p-4 bg-stable-50 border border-stable-200 rounded-xl text-safety-dark text-sm">{{ session('success') }}</div>
                 @endif
                 @yield('content')
             </div>
         </main>
     </div>
+    <script>
+        const sidebar = document.getElementById('admin-sidebar');
+        const overlay = document.getElementById('sidebar-overlay');
+        document.getElementById('open-sidebar')?.addEventListener('click', () => {
+            sidebar.classList.remove('-translate-x-full');
+            overlay.classList.remove('hidden');
+        });
+        function toggleSidebar() {
+            sidebar.classList.add('-translate-x-full');
+            overlay.classList.add('hidden');
+        }
+        document.getElementById('close-sidebar')?.addEventListener('click', toggleSidebar);
+    </script>
     @stack('scripts')
 </body>
 </html>
