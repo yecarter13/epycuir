@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title', 'Admin — Sellerie Super Confort')</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <style>
+        @media (min-width: 1024px) {
+            .admin-layout { flex-direction: row; }
+            .admin-sidebar { position: relative !important; transform: none !important; display: flex !important; flex-shrink: 0; }
+            .admin-overlay { display: none !important; }
+        }
+    </style>
 </head>
 <body class="font-sans antialiased bg-stable-50">
-    <div class="min-h-screen flex">
-        <aside id="admin-sidebar" class="w-64 bg-stable-900 min-h-screen flex-shrink-0 hidden lg:block fixed inset-y-0 left-0 z-40 lg:relative lg:translate-x-0 -translate-x-full transition-transform duration-300 overflow-y-auto">
+    <div class="admin-layout min-h-screen flex flex-col">
+        <aside id="admin-sidebar" class="admin-sidebar w-64 bg-stable-900 min-h-screen flex-shrink-0 fixed inset-y-0 left-0 z-40 -translate-x-full transition-transform duration-300 overflow-y-auto">
             <div class="p-5 border-b border-stable-700">
                 <div class="flex items-center justify-between">
                     <a href="{{ route('admin.dashboard') }}" class="flex items-center gap-2.5">
@@ -58,7 +65,7 @@
             </nav>
         </aside>
 
-        <div id="sidebar-overlay" class="fixed inset-0 bg-black/50 z-30 hidden lg:hidden" onclick="toggleSidebar()"></div>
+        <div id="sidebar-overlay" class="admin-overlay fixed inset-0 bg-black/50 z-30 lg:hidden" onclick="toggleSidebar()" style="display:none"></div>
 
         <main class="flex-1 min-w-0">
             <header class="bg-white border-b border-stable-100 px-4 sm:px-6 py-4 flex items-center justify-between sticky top-0 z-20">
@@ -78,7 +85,7 @@
                     @endauth
                 </div>
             </header>
-            <div class="p-4 sm:p-6 max-w-7xl mx-auto">
+            <div class="p-4 sm:p-6">
                 @if(session('success'))
                 <div class="mb-4 p-4 bg-stable-50 border border-stable-200 rounded-xl text-safety-dark text-sm">{{ session('success') }}</div>
                 @endif
@@ -90,12 +97,12 @@
         const sidebar = document.getElementById('admin-sidebar');
         const overlay = document.getElementById('sidebar-overlay');
         document.getElementById('open-sidebar')?.addEventListener('click', () => {
-            sidebar.classList.remove('-translate-x-full');
-            overlay.classList.remove('hidden');
+            sidebar.style.transform = 'translateX(0)';
+            overlay.style.display = 'block';
         });
         function toggleSidebar() {
-            sidebar.classList.add('-translate-x-full');
-            overlay.classList.add('hidden');
+            sidebar.style.transform = '';
+            overlay.style.display = 'none';
         }
         document.getElementById('close-sidebar')?.addEventListener('click', toggleSidebar);
     </script>
