@@ -8,7 +8,7 @@
 </head>
 <body class="font-sans antialiased bg-stable-50">
     <div class="min-h-screen flex">
-        <aside id="admin-sidebar" class="w-64 bg-stable-900 min-h-screen flex-shrink-0 hidden lg:block fixed inset-y-0 left-0 z-40 lg:relative lg:translate-x-0 -translate-x-full transition-transform duration-300" >
+        <aside id="admin-sidebar" class="w-64 bg-stable-900 min-h-screen flex-shrink-0 hidden lg:block fixed inset-y-0 left-0 z-40 lg:relative lg:translate-x-0 -translate-x-full transition-transform duration-300 overflow-y-auto">
             <div class="p-5 border-b border-stable-700">
                 <div class="flex items-center justify-between">
                     <a href="{{ route('admin.dashboard') }}" class="flex items-center gap-2.5">
@@ -60,15 +60,15 @@
 
         <div id="sidebar-overlay" class="fixed inset-0 bg-black/50 z-30 hidden lg:hidden" onclick="toggleSidebar()"></div>
 
-        <main class="flex-1">
-            <header class="bg-white border-b border-stable-100 px-6 py-4 flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                    <button id="open-sidebar" class="lg:hidden text-stable-600 hover:text-stable-900">
+        <main class="flex-1 min-w-0">
+            <header class="bg-white border-b border-stable-100 px-4 sm:px-6 py-4 flex items-center justify-between sticky top-0 z-20">
+                <div class="flex items-center gap-3 min-w-0">
+                    <button id="open-sidebar" class="lg:hidden text-stable-600 hover:text-stable-900 flex-shrink-0">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
                     </button>
-                    <h1 class="text-xl font-bold text-stable-900">@yield('title', 'Tableau de bord')</h1>
+                    <h1 class="text-lg sm:text-xl font-bold text-stable-900 truncate">@yield('title', 'Tableau de bord')</h1>
                 </div>
-                <div class="flex items-center gap-3">
+                <div class="flex items-center gap-3 flex-shrink-0">
                     <span class="text-sm text-stable-500 hidden sm:inline">{{ auth()->user()?->name ?? 'Admin' }}</span>
                     @auth
                     <form method="POST" action="{{ route('logout') }}">
@@ -78,7 +78,7 @@
                     @endauth
                 </div>
             </header>
-            <div class="p-6">
+            <div class="p-4 sm:p-6 max-w-7xl mx-auto">
                 @if(session('success'))
                 <div class="mb-4 p-4 bg-stable-50 border border-stable-200 rounded-xl text-safety-dark text-sm">{{ session('success') }}</div>
                 @endif
