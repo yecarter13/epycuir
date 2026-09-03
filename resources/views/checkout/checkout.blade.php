@@ -123,12 +123,12 @@
                         </div>
                         <div class="flex justify-between text-stable-500">
                             <span>Livraison</span>
-                            <span>@if($freeShipping)<span class="text-green-600 font-semibold">OFFERTE</span>@else&euro;{{ number_format($shipping, 2) }}@endif</span>
+                            <span>@if($freeShipping)<span class="text-safety font-semibold">OFFERTE</span>@else&euro;{{ number_format($shipping, 2) }}@endif</span>
                         </div>
                         @if($freeShipping && $isFirstOrder)
-                        <div class="bg-green-50 border border-green-200 rounded-lg p-2.5 flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-                            <span class="text-xs text-green-700 font-medium">Première commande — livraison offerte appliquée</span>
+                        <div class="bg-stable-50 border border-stable-200 rounded-lg p-2.5 flex items-center gap-2">
+                            <svg class="w-4 h-4 text-safety shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                            <span class="text-xs text-safety-dark font-medium">Première commande — livraison offerte appliquée</span>
                         </div>
                         @elseif(!$freeShipping)
                         <div class="bg-stable-50 rounded-lg p-3">
@@ -149,7 +149,7 @@
 
                     <div class="mt-6 pt-4 border-t border-stable-100">
                         <p class="text-xs text-stable-400 flex items-center gap-2 mb-2">
-                            <svg class="w-3.5 h-3.5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                            <svg class="w-3.5 h-3.5 text-safety" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                             Votre paiement est sécurisé par Stripe
                         </p>
                     </div>

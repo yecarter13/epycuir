@@ -23,9 +23,9 @@
 </div>
 
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8">
-    <div class="bg-white rounded-xl border border-green-100 p-5">
-        <p class="text-green-600 text-sm font-medium">Chiffre d'affaires du jour</p>
-        <p class="text-3xl font-bold text-green-700 mt-1">&euro;{{ number_format($stats['revenue_today'], 2) }}</p>
+    <div class="bg-white rounded-xl border border-stable-100 p-5">
+        <p class="text-safety text-sm font-medium">Chiffre d'affaires du jour</p>
+        <p class="text-3xl font-bold text-safety-dark mt-1">&euro;{{ number_format($stats['revenue_today'], 2) }}</p>
     </div>
     <div class="bg-white rounded-xl border border-blue-100 p-5">
         <p class="text-blue-600 text-sm font-medium">Chiffre d'affaires du mois</p>
@@ -57,7 +57,7 @@
             @forelse($categories as $cat)
             <div class="flex items-center justify-between py-2 border-b border-stable-50 last:border-0">
                 <div class="flex items-center gap-3">
-                    <span class="w-2 h-2 rounded-full {{ $cat->is_active ? 'bg-green-500' : 'bg-stable-300' }}"></span>
+                    <span class="w-2 h-2 rounded-full {{ $cat->is_active ? 'bg-safety' : 'bg-stable-300' }}"></span>
                     <p class="text-sm font-medium text-stable-900">{{ $cat->name }}</p>
                 </div>
                 <span class="text-xs text-stable-500">{{ $cat->products_count }} produits</span>

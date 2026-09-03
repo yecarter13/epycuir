@@ -13,7 +13,7 @@
 <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;background:#ffffff;">
 
 <tr>
-<td style="background:linear-gradient(135deg,#f97316 0%,#ea580c 100%);padding:40px 40px 30px;text-align:center;">
+<td style="background:linear-gradient(135deg,#334e68 0%,#243b53 100%);padding:40px 40px 30px;text-align:center;">
 <h1 style="margin:0 0 6px;color:#ffffff;font-size:26px;font-weight:800;">Sellerie <span style="color:#fed7aa;">Super Confort</span></h1>
 <p style="margin:0;color:rgba(255,255,255,0.85);font-size:15px;font-weight:400;">{{ $subject }}</p>
 </td>
@@ -29,7 +29,7 @@
 <td style="padding:0 40px 36px;">
 <hr style="border:none;border-top:1px solid #e2e8f0;margin:0 0 24px;">
 <p style="margin:0 0 4px;font-size:14px;color:#475569;">Si vous avez des questions, contactez-nous :</p>
-<p style="margin:0;font-size:14px;"><a href="mailto:info@scelle.com" style="color:#f97316;text-decoration:none;">info@scelle.com</a> &mdash; +33 7 56 96 57 89</p>
+<p style="margin:0;font-size:14px;"><a href="mailto:info@scelle.com" style="color:#334e68;text-decoration:none;">info@scelle.com</a> &mdash; +33 7 56 96 57 89</p>
 </td>
 </tr>
 

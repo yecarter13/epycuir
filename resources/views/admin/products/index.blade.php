@@ -40,7 +40,7 @@
                 <td class="px-4 py-3 text-stable-500 hidden md:table-cell">{{ $p->category?->name ?? '-' }}</td>
                 <td class="px-4 py-3 font-medium text-stable-900">&euro;{{ number_format($p->price, 2) }}</td>
                 <td class="px-4 py-3 hidden lg:table-cell">
-                    <span class="px-2 py-0.5 text-xs font-medium rounded {{ $p->stock_quantity > 5 ? 'bg-green-50 text-green-600' : ($p->stock_quantity > 0 ? 'bg-yellow-50 text-yellow-600' : 'bg-cta/10 text-cta') }}">
+                    <span class="px-2 py-0.5 text-xs font-medium rounded {{ $p->stock_quantity > 5 ? 'bg-stable-50 text-safety' : ($p->stock_quantity > 0 ? 'bg-yellow-50 text-yellow-600' : 'bg-cta/10 text-cta') }}">
                         {{ $p->stock_quantity }}
                     </span>
                 </td>

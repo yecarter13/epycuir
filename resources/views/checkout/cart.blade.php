@@ -86,12 +86,12 @@
                         </div>
                         <div class="flex justify-between text-stable-500">
                             <span>Livraison</span>
-                            <span>@if($freeShipping)<span class="text-green-600 font-semibold">OFFERTE</span>@else&euro;{{ number_format($shipping, 2) }}@endif</span>
+                            <span>@if($freeShipping)<span class="text-safety font-semibold">OFFERTE</span>@else&euro;{{ number_format($shipping, 2) }}@endif</span>
                         </div>
                         @if($freeShipping && $isFirstOrder)
-                        <div class="bg-green-50 border border-green-200 rounded-lg p-2.5 flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-                            <span class="text-xs text-green-700 font-medium">Première commande — livraison offerte appliquée</span>
+                        <div class="bg-stable-50 border border-stable-200 rounded-lg p-2.5 flex items-center gap-2">
+                            <svg class="w-4 h-4 text-safety shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                            <span class="text-xs text-safety-dark font-medium">Première commande — livraison offerte appliquée</span>
                         </div>
                         @elseif(!$freeShipping)
                         <p class="text-xs text-stable-400">Livraison offerte dès 80 &euro;</p>
@@ -110,7 +110,7 @@
                     </a>
                     <p class="text-xs text-stable-400 text-center mt-3">Paiement en ligne non requis — votre commande sera confirmée sur WhatsApp.</p>
                     @else
-                    <a href="{{ route('contact') }}" class="mt-6 w-full px-6 py-3.5 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-green-500/25">
+                    <a href="{{ route('contact') }}" class="mt-6 w-full px-6 py-3.5 bg-safety hover:bg-safety-dark text-white font-semibold rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-safety/25">
                         Contactez-nous pour commander
                     </a>
                     @endif
@@ -125,7 +125,7 @@
                     </a>
                     <div class="mt-4 pt-4 border-t border-stable-100">
                         <div class="flex items-center justify-center gap-1.5 text-xs text-stable-400">
-                            <svg class="w-3.5 h-3.5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                            <svg class="w-3.5 h-3.5 text-safety" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
                             @if(\App\Support\OrderMode::isWhatsapp())Commandes confirmées via WhatsApp@else Paiement sécurisé via Stripe @endif
                         </div>
                     </div>

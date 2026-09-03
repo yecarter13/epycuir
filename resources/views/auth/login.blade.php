@@ -11,12 +11,12 @@
     @vite('resources/css/app.css')
     <style>
         body { font-family: 'Instrument Sans', system-ui, sans-serif; }
-        .login-bg { background: linear-gradient(135deg, #21362e 0%, #1a2b24 50%, #142019 100%); }
+        .login-bg { background: linear-gradient(135deg, #0a1929 0%, #102a43 50%, #050e18 100%); }
         .login-card { background: rgba(255,255,255,0.98); backdrop-filter: blur(20px); }
         .input-field { transition: all 0.2s ease; }
-        .input-field:focus { border-color: #b58d3d; box-shadow: 0 0 0 3px rgba(181,141,61,0.15); }
-        .btn-primary { background: #b58d3d; transition: all 0.2s ease; }
-        .btn-primary:hover { background: #97752f; transform: translateY(-1px); box-shadow: 0 4px 15px rgba(181,141,61,0.35); }
+        .input-field:focus { border-color: #94a3b8; box-shadow: 0 0 0 3px rgba(148,163,184,0.15); }
+        .btn-primary { background: #94a3b8; transition: all 0.2s ease; }
+        .btn-primary:hover { background: #64748b; transform: translateY(-1px); box-shadow: 0 4px 15px rgba(148,163,184,0.35); }
         .btn-primary:active { transform: translateY(0); }
         .error-fade { animation: fadeIn 0.3s ease; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
@@ -26,7 +26,7 @@
     <div class="w-full max-w-md">
         <div class="text-center mb-8">
             <a href="{{ route('home') }}" class="inline-flex items-center gap-2.5 text-white hover:text-safety transition-colors">
-                <svg class="w-8 h-8" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#b58d3d"/><path d="M12 20L18 14L24 20M18 14V28" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <svg class="w-8 h-8" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#94a3b8"/><path d="M12 20L18 14L24 20M18 14V28" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 <span class="text-xl font-bold">Sellerie Super Confort <span class="text-safety font-light">France</span></span>
             </a>
         </div>
@@ -36,7 +36,7 @@
             <p class="text-sm text-stable-400 text-center mb-6">Connectez-vous pour gérer votre boutique</p>
 
             @if(session('success'))
-                <div class="mb-4 p-3 bg-green-50 border border-green-200 text-green-700 text-sm rounded-lg error-fade flex items-center gap-2">
+                <div class="mb-4 p-3 bg-stable-50 border border-stable-200 text-safety-dark text-sm rounded-lg error-fade flex items-center gap-2">
                     <svg class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                     <span>{{ session('success') }}</span>
                 </div>

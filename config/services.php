@@ -55,6 +55,11 @@ return [
         'model' => env('GROQ_MODEL', 'llama-3.3-70b-versatile'),
     ],
 
+    'xai' => [
+        'api_key' => env('XAI_API_KEY'),
+        'model' => env('XAI_MODEL', 'grok-3'),
+    ],
+
     'stripe' => [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),

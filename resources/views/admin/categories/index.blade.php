@@ -28,7 +28,7 @@
                 <td class="px-4 py-3 text-stable-500 hidden sm:table-cell">{{ $cat->slug }}</td>
                 <td class="px-4 py-3 text-stable-500 hidden md:table-cell">{{ $cat->products_count }}</td>
                 <td class="px-4 py-3">
-                    <span class="px-2 py-0.5 text-xs font-medium rounded {{ $cat->is_active ? 'bg-green-50 text-green-600' : 'bg-stable-100 text-stable-500' }}">
+                    <span class="px-2 py-0.5 text-xs font-medium rounded {{ $cat->is_active ? 'bg-stable-50 text-safety' : 'bg-stable-100 text-stable-500' }}">
                         {{ $cat->is_active ? 'Active' : 'Inactive' }}
                     </span>
                 </td>

@@ -22,9 +22,9 @@
             <div>
                 <h2 class="text-xl font-bold text-stable-900 mb-3">Ce qui est couvert</h2>
                 <ul class="space-y-2 text-stable-600">
-                    <li class="flex items-start gap-2"><svg class="w-4 h-4 text-green-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Les défauts de fabrication liés aux matériaux ou à la confection</li>
-                    <li class="flex items-start gap-2"><svg class="w-4 h-4 text-green-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> La défaillance prématurée dans des conditions d'utilisation normales</li>
-                    <li class="flex items-start gap-2"><svg class="w-4 h-4 text-green-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Les articles ne fonctionnant pas conformément à leur fonction d'origine</li>
+                    <li class="flex items-start gap-2"><svg class="w-4 h-4 text-safety mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Les défauts de fabrication liés aux matériaux ou à la confection</li>
+                    <li class="flex items-start gap-2"><svg class="w-4 h-4 text-safety mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> La défaillance prématurée dans des conditions d'utilisation normales</li>
+                    <li class="flex items-start gap-2"><svg class="w-4 h-4 text-safety mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Les articles ne fonctionnant pas conformément à leur fonction d'origine</li>
                 </ul>
             </div>
             <div>

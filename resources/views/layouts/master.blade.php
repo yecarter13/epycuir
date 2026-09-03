@@ -93,8 +93,8 @@
 
     @include('partials.floating-whatsapp')
 
-    <div id="cart-toast" class="fixed top-4 left-1/2 -translate-x-1/2 z-50 px-6 py-4 bg-stable-900 text-white text-base font-semibold rounded-xl shadow-2xl flex items-center gap-3 transition-all duration-300 opacity-0 -translate-y-4 pointer-events-none border border-green-500/30">
-        <svg class="w-6 h-6 text-green-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+    <div id="cart-toast" class="fixed top-4 left-1/2 -translate-x-1/2 z-50 px-6 py-4 bg-stable-900 text-white text-base font-semibold rounded-xl shadow-2xl flex items-center gap-3 transition-all duration-300 opacity-0 -translate-y-4 pointer-events-none border border-safety/30">
+        <svg class="w-6 h-6 text-safety shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
         <span id="cart-toast-msg">Ajouté au panier</span>
     </div>
 

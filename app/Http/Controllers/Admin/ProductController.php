@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Product;
+use Illuminate\Database\UniqueConstraintViolationException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
@@ -29,6 +30,7 @@ class ProductController extends Controller
         $data = $request->validate([
             'category_id' => 'nullable|exists:categories,id',
             'name' => 'required|string|max:255',
+            'slug' => 'nullable|string|max:255|unique:products,slug',
             'description' => 'nullable|string',
             'specifications' => 'nullable|string',
             'price' => 'required|numeric|min:0',
@@ -116,7 +118,12 @@ class ProductController extends Controller
             $data['gallery_images'] = $this->normalizeGalleryJson($data['gallery_images']);
         }
 
-        $product->update($data);
+        try {
+            $product->update($data);
+        } catch (UniqueConstraintViolationException $e) {
+            $data['slug'] = Str::slug($data['name']) . '-' . Str::random(5);
+            $product->update($data);
+        }
 
         return redirect()->route('admin.products.index')->with('success', 'Produit mis à jour avec succès.');
     }

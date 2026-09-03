@@ -18,7 +18,7 @@
             </div>
             @php
                 $statusClass = match($order->status) {
-                    'paid' => 'bg-green-100 text-green-700 border-green-200',
+                    'paid' => 'bg-stable-100 text-safety-dark border-stable-200',
                     'pending' => 'bg-amber-100 text-amber-700 border-amber-200',
                     'cancelled' => 'bg-red-100 text-red-700 border-red-200',
                     default => 'bg-stable-100 text-stable-600',
@@ -50,7 +50,7 @@
             @if($order->status === 'pending')
             <form method="POST" action="{{ route('admin.orders.markPaid', $order->id) }}" onsubmit="return confirm('Marquer cette commande comme payée ?')">
                 @csrf
-                <button type="submit" class="px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm font-medium rounded-lg transition-colors">Marquer comme payée</button>
+                <button type="submit" class="px-4 py-2 bg-safety hover:bg-safety-dark text-white text-sm font-medium rounded-lg transition-colors">Marquer comme payée</button>
             </form>
             @endif
         </div>

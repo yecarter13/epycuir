@@ -59,10 +59,10 @@
 
 <style>
     .chatbot-container { position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 9999; display: flex; flex-direction: column; align-items: flex-end; }
-    .chatbot-toggle { width: 56px; height: 56px; background: linear-gradient(135deg, #f97316, #ea580c); border-radius: 50%; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); display: flex; align-items: center; justify-content: center; cursor: pointer; border: 2px solid rgba(255,255,255,0.2); }
+    .chatbot-toggle { width: 56px; height: 56px; background: linear-gradient(135deg, #334e68, #243b53); border-radius: 50%; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); display: flex; align-items: center; justify-content: center; cursor: pointer; border: 2px solid rgba(255,255,255,0.2); }
     .chatbot-toggle-icon { width: 1.75rem; height: 1.75rem; color: white; }
     .chatbot-panel { display: none; position: absolute; bottom: 5rem; right: 0; width: 380px; height: 520px; background: white; border-radius: 1rem; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); border: 1px solid #e5e7eb; overflow: hidden; flex-direction: column; }
-    .chatbot-header { background: linear-gradient(90deg, #f97316, #ea580c); padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; }
+    .chatbot-header { background: linear-gradient(90deg, #334e68, #243b53); padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; }
     .chatbot-header-left { display: flex; align-items: center; gap: 0.75rem; }
     .chatbot-avatar { width: 32px; height: 32px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
     .chatbot-header-title { font-size: 0.875rem; font-weight: 600; color: white; }
@@ -73,15 +73,15 @@
     .chatbot-messages::-webkit-scrollbar { width: 4px; }
     .chatbot-messages::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 2px; }
     .chatbot-msg { animation: msg-in 0.25s ease-out; }
-    .chatbot-msg-avatar { width: 28px; height: 28px; background: #f97316; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .chatbot-msg-avatar { width: 28px; height: 28px; background: #334e68; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
     .chatbot-msg-bubble.bot { background: white; border-radius: 1rem; border-top-left-radius: 0.25rem; padding: 0.625rem 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.06); border: 1px solid #e5e7eb; max-width: 85%; }
-    .chatbot-msg-bubble.user { background: #f97316; color: white; border-radius: 1rem; border-top-right-radius: 0.25rem; padding: 0.625rem 1rem; max-width: 85%; }
+    .chatbot-msg-bubble.user { background: #334e68; color: white; border-radius: 1rem; border-top-right-radius: 0.25rem; padding: 0.625rem 1rem; max-width: 85%; }
     .chatbot-products { display: none; border-top: 1px solid #e5e7eb; background: white; max-height: 180px; overflow-y: auto; }
     .chatbot-input-area { padding: 0.75rem; border-top: 1px solid #e5e7eb; background: white; flex-shrink: 0; }
     .chatbot-input { flex: 1; padding: 0.625rem 1rem; font-size: 0.875rem; border: 1px solid #e5e7eb; border-radius: 0.75rem; background: #f8f4f0; }
-    .chatbot-input:focus { outline: none; border-color: #f97316; }
-    .chatbot-send-btn { padding: 10px 16px; background: #f97316; color: white; border-radius: 0.75rem; border: none; cursor: pointer; transition: all 0.15s; }
-    .chatbot-send-btn:hover { background: #ea580c; }
+    .chatbot-input:focus { outline: none; border-color: #334e68; }
+    .chatbot-send-btn { padding: 10px 16px; background: #334e68; color: white; border-radius: 0.75rem; border: none; cursor: pointer; transition: all 0.15s; }
+    .chatbot-send-btn:hover { background: #243b53; }
     .chatbot-send-btn:disabled { opacity: 0.5; cursor: not-allowed; }
 
     @keyframes msg-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }

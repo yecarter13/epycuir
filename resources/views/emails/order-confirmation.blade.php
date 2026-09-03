@@ -14,7 +14,7 @@
 
 <!-- Header -->
 <tr>
-<td style="background:linear-gradient(135deg,#f97316 0%,#ea580c 100%);padding:40px 40px 30px;text-align:center;">
+<td style="background:linear-gradient(135deg,#334e68 0%,#243b53 100%);padding:40px 40px 30px;text-align:center;">
 <h1 style="margin:0 0 6px;color:#ffffff;font-size:26px;font-weight:800;">Sellerie <span style="color:#fed7aa;">Super Confort</span></h1>
 <p style="margin:0;color:rgba(255,255,255,0.85);font-size:15px;font-weight:400;">Confirmation de commande</p>
 </td>
@@ -32,7 +32,7 @@
 <tr>
 <td style="padding:0 40px;">
 <p style="margin:0 0 4px;font-size:12px;color:#64748b;font-weight:600;text-transform:uppercase;letter-spacing:1px;">Référence de commande</p>
-<p style="margin:0 0 24px;font-size:22px;font-weight:700;color:#f97316;">#{{ $order->order_number }}</p>
+<p style="margin:0 0 24px;font-size:22px;font-weight:700;color:#334e68;">#{{ $order->order_number }}</p>
 </td>
 </tr>
 
@@ -82,8 +82,8 @@
 </td>
 </tr>
 <tr>
-<td style="padding:14px 0 4px;border-top:2px solid #f97316;font-size:17px;font-weight:700;color:#0f172a;">Total de la commande</td>
-<td align="right" style="padding:14px 0 4px;border-top:2px solid #f97316;font-size:20px;font-weight:700;color:#f97316;">&euro;{{ number_format($order->total,2) }}</td>
+<td style="padding:14px 0 4px;border-top:2px solid #334e68;font-size:17px;font-weight:700;color:#0f172a;">Total de la commande</td>
+<td align="right" style="padding:14px 0 4px;border-top:2px solid #334e68;font-size:20px;font-weight:700;color:#334e68;">&euro;{{ number_format($order->total,2) }}</td>
 </tr>
 </table>
 </td>
@@ -115,7 +115,7 @@
 <tr>
 <td style="padding:24px 40px 36px;">
 <p style="margin:0 0 4px;font-size:14px;color:#475569;">Si vous avez des questions, contactez-nous :</p>
-<p style="margin:0;font-size:14px;"><a href="mailto:info@scelle.com" style="color:#f97316;text-decoration:none;">info@scelle.com</a> &mdash; +33 7 56 96 57 89</p>
+<p style="margin:0;font-size:14px;"><a href="mailto:info@scelle.com" style="color:#334e68;text-decoration:none;">info@scelle.com</a> &mdash; +33 7 56 96 57 89</p>
 </td>
 </tr>
 

@@ -6,7 +6,7 @@
         default => '',
     };
     $statusClass = fn($s) => match($s) {
-        'paid' => 'bg-green-100 text-green-700 border-green-200',
+        'paid' => 'bg-stable-100 text-safety-dark border-stable-200',
         'pending' => 'bg-amber-100 text-amber-700 border-amber-200',
         'cancelled' => 'bg-red-100 text-red-700 border-red-200',
         default => 'bg-stable-100 text-stable-600',
@@ -35,9 +35,9 @@
             <p class="text-xs text-stable-400 uppercase tracking-wider mb-1">Total commandes</p>
             <p class="text-2xl font-bold text-stable-900">{{ $stats['total'] }}</p>
         </div>
-        <div class="bg-white rounded-xl border border-green-100 p-4">
-            <p class="text-xs text-green-600 uppercase tracking-wider mb-1 flex items-center gap-1">{!! $statusIcon('paid') !!} Payées</p>
-            <p class="text-2xl font-bold text-green-700">{{ $stats['paid'] }}</p>
+        <div class="bg-white rounded-xl border border-stable-100 p-4">
+            <p class="text-xs text-safety uppercase tracking-wider mb-1 flex items-center gap-1">{!! $statusIcon('paid') !!} Payées</p>
+            <p class="text-2xl font-bold text-safety-dark">{{ $stats['paid'] }}</p>
         </div>
         <div class="bg-white rounded-xl border border-amber-100 p-4">
             <p class="text-xs text-amber-600 uppercase tracking-wider mb-1 flex items-center gap-1">{!! $statusIcon('pending') !!} En attente</p>
