@@ -1,10 +1,10 @@
 @extends('layouts.master')
 
-@section('title', 'Toutes les catégories — Sellerie Super Confort')
-@section('meta_description', 'Parcourez toutes les catégories d\'équipement équestre chez Sellerie Super Confort. Des selles aux tapis, trouvez l\'équipement idéal pour votre cheval avec une livraison rapide en France.')
+@section('title', 'Toutes les catégories — Sellerie Epycuir')
+@section('meta_description', 'Parcourez toutes les catégories d\'équipement équestre chez Sellerie Epycuir. Des selles aux tapis, trouvez l\'équipement idéal pour votre cheval avec une livraison rapide en France.')
 
-@section('og_title', 'Toutes les catégories — Sellerie Super Confort')
-@section('og_description', 'Parcourez toutes les catégories d\'équipement équestre chez Sellerie Super Confort. Des selles aux tapis, trouvez l\'équipement idéal pour votre cheval avec une livraison rapide en France.')
+@section('og_title', 'Toutes les catégories — Sellerie Epycuir')
+@section('og_description', 'Parcourez toutes les catégories d\'équipement équestre chez Sellerie Epycuir. Des selles aux tapis, trouvez l\'équipement idéal pour votre cheval avec une livraison rapide en France.')
 @section('og_url', url()->current())
 @section('og_image', asset('favicon.svg'))
 @section('og_type', 'website')

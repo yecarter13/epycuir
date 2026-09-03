@@ -25,7 +25,7 @@
 
     <div class="flex items-center justify-between mb-6 pb-4 border-b border-stable-100">
         <h2 class="text-lg font-bold text-stable-900">{{ $product ? 'Modifier le produit' : 'Nouveau produit' }}</h2>
-        <span class="text-xs text-stable-400 bg-stable-50 px-2.5 py-1 rounded-lg">Sellerie Super Confort AI</span>
+        <span class="text-xs text-stable-400 bg-stable-50 px-2.5 py-1 rounded-lg">Sellerie Epycuir AI</span>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">

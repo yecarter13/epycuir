@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Confidentialité — Sellerie Super Confort')
+@section('title', 'Confidentialité — Sellerie Epycuir')
 
 @section('content')
 
@@ -17,7 +17,7 @@
         <div class="bg-white rounded-2xl border border-stable-100 p-8 lg:p-10 space-y-8">
             <div>
                 <h2 class="text-xl font-bold text-stable-900 mb-3">Qui sommes-nous ?</h2>
-                <p class="text-stable-600 leading-relaxed">Sellerie Super Confort est une boutique d'équipement équestre située au 25 rue de Cogiandant Crénière, 10270 Courteranges, en France. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos données personnelles lorsque vous utilisez notre site web et nos services.</p>
+                <p class="text-stable-600 leading-relaxed">Sellerie Epycuir est une boutique d'équipement équestre située au 25 rue de Cogiandant Crénière, 10270 Courteranges, en France. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos données personnelles lorsque vous utilisez notre site web et nos services.</p>
             </div>
             <div>
                 <h2 class="text-xl font-bold text-stable-900 mb-3">Informations que nous collectons</h2>

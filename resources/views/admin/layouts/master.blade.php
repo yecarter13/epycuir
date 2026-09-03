@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@yield('title', 'Admin — Sellerie Super Confort')</title>
+    <title>@yield('title', 'Admin — Sellerie Epycuir')</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <style>
         #admin-sidebar {
@@ -34,7 +34,7 @@
                         <div class="w-8 h-8 bg-safety rounded-lg flex items-center justify-center flex-shrink-0">
                             <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
                         </div>
-                        <span class="text-lg font-bold text-white whitespace-nowrap">Sellerie<span class="text-safety"> Super Confort</span> <span class="text-xs text-stable-400 font-normal">Admin</span></span>
+                        <span class="text-lg font-bold text-white whitespace-nowrap">Sellerie <span class="text-safety">Epycuir</span> <span class="text-xs text-stable-400 font-normal">Admin</span></span>
                     </a>
                     <button id="close-sidebar" class="lg:hidden text-stable-400 hover:text-white flex-shrink-0 ml-2">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>

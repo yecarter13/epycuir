@@ -1,9 +1,9 @@
 @extends('layouts.master')
 
-@section('title', $categoryTitle ?? 'Boutique d\'équipement équestre — Sellerie Super Confort')
+@section('title', $categoryTitle ?? 'Boutique d\'équipement équestre — Sellerie Epycuir')
 @section('meta_description', $metaDescription ?? 'Parcourez notre large catalogue d\'équipement équestre. Livraison rapide en France disponible sur des centaines d\'articles.')
 
-@section('og_title', $categoryTitle ?? 'Boutique d\'équipement équestre — Sellerie Super Confort')
+@section('og_title', $categoryTitle ?? 'Boutique d\'équipement équestre — Sellerie Epycuir')
 @section('og_description', $metaDescription ?? 'Parcourez notre large catalogue d\'équipement équestre. Livraison rapide en France disponible sur des centaines d\'articles.')
 @section('og_url', url()->current())
 @section('og_image', asset('favicon.svg'))

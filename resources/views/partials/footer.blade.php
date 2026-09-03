@@ -9,7 +9,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
                         </svg>
                     </div>
-                    <span class="text-lg font-bold text-white tracking-tight">Sellerie<span class="text-safety"> Super Confort</span></span>
+                    <span class="text-lg font-bold text-white tracking-tight">Sellerie <span class="text-safety">Epycuir</span></span>
                 </a>
                 <p class="text-stable-400 text-sm leading-relaxed mb-4">
                     Votre sellerie de confiance pour le matériel équestre de qualité. Plus de 20 ans de savoir-faire français au service des cavaliers.
@@ -111,7 +111,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
                     </svg>
                 </div>
-                <span class="text-lg font-bold text-white tracking-tight">Sellerie<span class="text-safety"> Super Confort</span></span>
+                <span class="text-lg font-bold text-white tracking-tight">Sellerie <span class="text-safety">Epycuir</span></span>
             </a>
             @if($cAddress)
             <a href="https://www.google.com/maps/search/?api=1&query={{ urlencode($cAddress) }}" target="_blank" rel="noopener" class="flex items-start gap-3 mb-3">
@@ -171,7 +171,7 @@
                     </div>
                 </div>
                 <p class="text-stable-600 text-xs">
-                    &copy; {{ date('Y') }} Sellerie Super Confort. Tous droits réservés.
+                    &copy; {{ date('Y') }} Sellerie Epycuir. Tous droits réservés.
                 </p>
             </div>
         </div>

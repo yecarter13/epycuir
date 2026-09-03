@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Garantie — Sellerie Super Confort')
+@section('title', 'Garantie — Sellerie Epycuir')
 
 @section('content')
 
@@ -17,7 +17,7 @@
         <div class="bg-white rounded-2xl border border-stable-100 p-8 lg:p-10 space-y-8">
             <div>
                 <h2 class="text-xl font-bold text-stable-900 mb-3">Garantie 12 mois</h2>
-                <p class="text-stable-600 leading-relaxed">Tous les produits vendus par Sellerie Super Confort sont couverts par une garantie d'une durée minimale de 12 mois à compter de la date d'achat. Cette garantie couvre les défauts de fabrication et la défaillance prématurée dans des conditions d'utilisation normales, et peut donner lieu à une réparation ou à un remplacement. En outre, vous bénéficiez de la garantie légale de conformité d'une durée de 2 ans, conformément au Code de la consommation.</p>
+                <p class="text-stable-600 leading-relaxed">Tous les produits vendus par Sellerie Epycuir sont couverts par une garantie d'une durée minimale de 12 mois à compter de la date d'achat. Cette garantie couvre les défauts de fabrication et la défaillance prématurée dans des conditions d'utilisation normales, et peut donner lieu à une réparation ou à un remplacement. En outre, vous bénéficiez de la garantie légale de conformité d'une durée de 2 ans, conformément au Code de la consommation.</p>
             </div>
             <div>
                 <h2 class="text-xl font-bold text-stable-900 mb-3">Ce qui est couvert</h2>

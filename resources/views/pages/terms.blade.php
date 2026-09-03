@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Conditions générales — Sellerie Super Confort')
+@section('title', 'Conditions générales — Sellerie Epycuir')
 
 @section('content')
 
@@ -17,7 +17,7 @@
         <div class="bg-white rounded-2xl border border-stable-100 p-8 lg:p-10 space-y-8">
             <div>
                 <h2 class="text-xl font-bold text-stable-900 mb-3">Généralités</h2>
-                <p class="text-stable-600 leading-relaxed">Les présentes conditions générales de vente régissent votre utilisation du site web Sellerie Super Confort et l'achat de produits auprès de nous. En utilisant notre site web et en passant une commande, vous acceptez d'être lié par ces conditions.</p>
+                <p class="text-stable-600 leading-relaxed">Les présentes conditions générales de vente régissent votre utilisation du site web Sellerie Epycuir et l'achat de produits auprès de nous. En utilisant notre site web et en passant une commande, vous acceptez d'être lié par ces conditions.</p>
             </div>
             <div>
                 <h2 class="text-xl font-bold text-stable-900 mb-3">Informations sur les produits</h2>
@@ -45,7 +45,7 @@
             </div>
             <div>
                 <h2 class="text-xl font-bold text-stable-900 mb-3">Limitation de responsabilité</h2>
-                <p class="text-stable-600 leading-relaxed">Dans la limite maximale autorisée par la loi, Sellerie Super Confort ne pourra être tenu responsable des dommages indirects, accessoires ou consécutifs résultant de l'utilisation de nos produits ou de notre site web.</p>
+                <p class="text-stable-600 leading-relaxed">Dans la limite maximale autorisée par la loi, Sellerie Epycuir ne pourra être tenu responsable des dommages indirects, accessoires ou consécutifs résultant de l'utilisation de nos produits ou de notre site web.</p>
             </div>
             <div>
                 <h2 class="text-xl font-bold text-stable-900 mb-3">Droit applicable</h2>

@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', $product->name . ' — Sellerie Super Confort')
+@section('title', $product->name . ' — Sellerie Epycuir')
 
 @section('meta_description', $product->meta_description ?? Str::limit(strip_tags($product->description), 160))
 
@@ -37,7 +37,7 @@ $ldProduct = [
         'priceValidUntil' => now()->addYear()->format('Y-m-d'),
         'availability' => $inStock ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
         'itemCondition' => 'https://schema.org/NouveauCondition',
-        'seller' => ['@type' => 'Organization', 'name' => 'Sellerie Super Confort'],
+        'seller' => ['@type' => 'Organization', 'name' => 'Sellerie Epycuir'],
     ],
 ];
 if ($product->category) $ldProduct['category'] = $product->category->name;
@@ -446,7 +446,7 @@ if ($product->category) {
             }
             const qty = parseInt(qtyInput.value) || 1;
             const price = ({{ $product->price }} * qty).toFixed(2);
-            const msg = 'Bonjour Sellerie Super Confort, je souhaite commander cet article :\n\n'
+            const msg = 'Bonjour Sellerie Epycuir, je souhaite commander cet article :\n\n'
                 + '- Produit : {{ $product->name }}\n'
                 + '- Référence : {{ $product->sku ?? $product->slug }}\n'
                 + '- Quantité : ' + qty + '\n'

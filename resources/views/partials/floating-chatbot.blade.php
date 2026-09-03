@@ -17,7 +17,7 @@
                     </svg>
                 </div>
                 <div>
-                    <p class="chatbot-header-title">Sellerie Super Confort AI</p>
+                    <p class="chatbot-header-title">Sellerie Epycuir AI</p>
                     <p class="chatbot-header-status">En ligne — posez-moi vos questions</p>
                 </div>
             </div>

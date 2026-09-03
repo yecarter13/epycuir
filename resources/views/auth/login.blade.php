@@ -7,7 +7,7 @@
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
-    <title>Connexion admin — Sellerie Super Confort</title>
+    <title>Connexion admin — Sellerie Epycuir</title>
     @vite('resources/css/app.css')
     <style>
         body { font-family: 'Instrument Sans', system-ui, sans-serif; }
@@ -27,7 +27,7 @@
         <div class="text-center mb-8">
             <a href="{{ route('home') }}" class="inline-flex items-center gap-2.5 text-white hover:text-safety transition-colors">
                 <svg class="w-8 h-8" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#94a3b8"/><path d="M12 20L18 14L24 20M18 14V28" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                <span class="text-xl font-bold">Sellerie Super Confort <span class="text-safety font-light">France</span></span>
+                <span class="text-xl font-bold">Sellerie Epycuir <span class="text-safety font-light">France</span></span>
             </a>
         </div>
 
@@ -96,7 +96,7 @@
         </div>
 
         <p class="text-center mt-8 text-stable-400 text-xs">
-            &copy; {{ date('Y') }} Sellerie Super Confort. Tous droits réservés.
+            &copy; {{ date('Y') }} Sellerie Epycuir. Tous droits réservés.
         </p>
     </div>
 </body>

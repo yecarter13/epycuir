@@ -1,19 +1,19 @@
 @extends('layouts.master')
 
-@section('title', 'À propos — Sellerie Super Confort')
+@section('title', 'À propos — Sellerie Epycuir')
 
 @section('content')
 
 {{-- Hero --}}
 <section class="relative bg-stable-900 py-20 lg:py-28 overflow-hidden">
     <div class="absolute inset-0">
-        <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=1920&q=80" alt="Atelier Sellerie Super Confort" class="w-full h-full object-cover" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=1920&q=80" alt="Atelier Sellerie Epycuir" class="w-full h-full object-cover" loading="lazy">
         <div class="absolute inset-0 bg-gradient-to-r from-stable-900/95 via-stable-900/80 to-stable-900/60"></div>
     </div>
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <span class="inline-block px-3 py-1 bg-safety/90 text-white text-xs font-semibold uppercase tracking-widest rounded-full mb-4">À propos</span>
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">Conçu par des selliers,<br>Fait pour les cavaliers</h1>
-        <p class="text-lg text-stable-200 max-w-2xl mx-auto">Depuis plus de 15 ans, Sellerie Super Confort est la référence française du matériel équestre : selles, brides, tapis, licols et accessoires d'écurie.</p>
+        <p class="text-lg text-stable-200 max-w-2xl mx-auto">Depuis plus de 15 ans, Sellerie Epycuir est la référence française du matériel équestre : selles, brides, tapis, licols et accessoires d'écurie.</p>
     </div>
 </section>
 
@@ -25,7 +25,7 @@
                 <span class="text-safety font-semibold text-sm uppercase tracking-widest">Notre histoire</span>
                 <h2 class="text-3xl lg:text-4xl font-bold text-stable-900 mt-3 mb-6">De l'atelier familial à la référence française du matériel équestre</h2>
                 <div class="space-y-4 text-stable-600 leading-relaxed">
-                    <p>Sellerie Super Confort a été fondée en 2010 par Gilles Martin, sellier-harnacheur de métier, installé à Courteranges, dans l'Aube. Lassé des matériaux de mauvaise qualité et des conseils trop peu sincères, il décide de créer sa propre maison avec une conviction : proposer à chaque cavalier un équipement durable, vérifié et adapté à son cheval.</p>
+                    <p>Sellerie Epycuir a été fondée en 2010 par Gilles Martin, sellier-harnacheur de métier, installé à Courteranges, dans l'Aube. Lassé des matériaux de mauvaise qualité et des conseils trop peu sincères, il décide de créer sa propre maison avec une conviction : proposer à chaque cavalier un équipement durable, vérifié et adapté à son cheval.</p>
                     <p>Aujourd'hui, notre atelier et notre boutique accueillent cavaliers, éleveurs et clubs équestres de toute la France. Chaque selle, bride, tapis ou licol est rigoureusement contrôlé avant de rejoindre nos rayons, et nous sélectionnons nos fournisseurs avec le plus grand soin.</p>
                     <p>Nous servons aussi bien les cavaliers de loisir que les professionnels du concours et les centres équestres. Notre engagement reste le même depuis le premier jour : le bon matériel, au bon prix, livré dans les meilleurs délais.</p>
                 </div>

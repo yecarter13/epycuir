@@ -1,8 +1,8 @@
 @extends('layouts.master')
 
-@section('title', 'Sellerie Super Confort — Équipement équestre premium livré partout en France')
-@section('og_title', 'Sellerie Super Confort — Équipement équestre premium livré partout en France')
-@section('og_description', 'Sellerie Super Confort, votre sellerie en ligne : selles, brides, tapis, licols et équipement équestre. Livraison rapide en France.')
+@section('title', 'Sellerie Epycuir — Équipement équestre premium livré partout en France')
+@section('og_title', 'Sellerie Epycuir — Équipement équestre premium livré partout en France')
+@section('og_description', 'Sellerie Epycuir, votre sellerie en ligne : selles, brides, tapis, licols et équipement équestre. Livraison rapide en France.')
 @section('og_url', url('/'))
 @section('og_type', 'website')
 

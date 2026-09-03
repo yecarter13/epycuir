@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Contactez-nous — Sellerie Super Confort')
+@section('title', 'Contactez-nous — Sellerie Epycuir')
 
 @section('content')
 
@@ -177,7 +177,7 @@
                 width="100%" height="100%" style="border:0; min-height:400px;" allowfullscreen loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
-                title="Localisation de Sellerie Super Confort"></iframe>
+                title="Localisation de Sellerie Epycuir"></iframe>
             <div class="hidden w-full h-full items-center justify-center bg-stable-100" style="min-height:400px;">
                 <div class="text-center p-8">
                     <svg class="w-16 h-16 text-stable-300 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="format-detection" content="telephone=no">
-    <title>@yield('title', 'Sellerie Super Confort — Équipement équestre de qualité, livré partout en France')</title>
-    <meta name="description" content="@yield('meta_description', 'Sellerie Super Confort, votre sellerie en ligne : selles, brides, tapis, licols et équipement équestre. Livraison rapide en France.')">
+    <title>@yield('title', 'Sellerie Epycuir — Équipement équestre de qualité, livré partout en France')</title>
+    <meta name="description" content="@yield('meta_description', 'Sellerie Epycuir, votre sellerie en ligne : selles, brides, tapis, licols et équipement équestre. Livraison rapide en France.')">
     @hasSection('robots')<meta name="robots" content="@yield('robots')">@else<meta name="robots" content="index, follow">@endif
     <link rel="canonical" href="@yield('canonical', url()->current())">
     <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}">
@@ -24,7 +24,7 @@
     <meta property="og:url" content="@yield('og_url', url()->current())">
     <meta property="og:image" content="@yield('og_image', asset('favicon.svg'))">
     <meta property="og:type" content="@yield('og_type', 'website')">
-    <meta property="og:site_name" content="Sellerie Super Confort">
+    <meta property="og:site_name" content="Sellerie Epycuir">
     <meta name="twitter:card" content="@yield('twitter_card', 'summary_large_image')">
     <meta name="twitter:title" content="@yield('og_title')">
     <meta name="twitter:description" content="@yield('og_description')">
@@ -49,7 +49,7 @@
     {
         "@@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "Sellerie Super Confort",
+        "name": "Sellerie Epycuir",
         "url": "{{ url('/') }}",
         "potentialAction": {
             "@type": "SearchAction",
@@ -63,7 +63,7 @@
     {
         "@@context": "https://schema.org",
         "@type": "Organization",
-        "name": "Sellerie Super Confort",
+        "name": "Sellerie Epycuir",
         "url": "{{ url('/') }}",
         "logo": "{{ asset('favicon.svg') }}",
         "contactPoint": {

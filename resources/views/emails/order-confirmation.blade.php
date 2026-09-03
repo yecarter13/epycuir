@@ -15,7 +15,7 @@
 <!-- Header -->
 <tr>
 <td style="background:linear-gradient(135deg,#334e68 0%,#243b53 100%);padding:40px 40px 30px;text-align:center;">
-<h1 style="margin:0 0 6px;color:#ffffff;font-size:26px;font-weight:800;">Sellerie <span style="color:#fed7aa;">Super Confort</span></h1>
+<h1 style="margin:0 0 6px;color:#ffffff;font-size:26px;font-weight:800;">Sellerie <span style="color:#fed7aa;">Epycuir</span></h1>
 <p style="margin:0;color:rgba(255,255,255,0.85);font-size:15px;font-weight:400;">Confirmation de commande</p>
 </td>
 </tr>
@@ -122,14 +122,14 @@
 <!-- Footer -->
 <tr>
 <td style="padding:24px 40px;background:#f8fafc;text-align:center;border-top:1px solid #e2e8f0;">
-<p style="margin:0 0 4px;font-size:12px;color:#94a3b8;">&copy; {{ date('Y') }} Sellerie Super Confort. Tous droits réservés.</p>
+<p style="margin:0 0 4px;font-size:12px;color:#94a3b8;">&copy; {{ date('Y') }} Sellerie Epycuir. Tous droits réservés.</p>
 <p style="margin:0;font-size:11px;color:#94a3b8;">www.scelle.com</p>
 </td>
 </tr>
 
 </table>
 
-<p style="margin:18px 0 0;font-size:11px;color:#94a3b8;text-align:center;">Cet e-mail a été envoyé pour confirmer votre commande sur Sellerie Super Confort.</p>
+<p style="margin:18px 0 0;font-size:11px;color:#94a3b8;text-align:center;">Cet e-mail a été envoyé pour confirmer votre commande sur Sellerie Epycuir.</p>
 
 </td>
 </tr>

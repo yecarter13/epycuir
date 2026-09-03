@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Retours & remboursements — Sellerie Super Confort')
+@section('title', 'Retours & remboursements — Sellerie Epycuir')
 
 @section('content')
 

@@ -9,7 +9,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
                         </svg>
                     </div>
-                    <span class="text-sm sm:text-lg md:text-xl font-bold text-white tracking-tight whitespace-nowrap">Sellerie<span class="text-safety"> Super Confort</span></span>
+                    <span class="text-sm sm:text-lg md:text-xl font-bold text-white tracking-tight whitespace-nowrap">Sellerie <span class="text-safety">Epycuir</span></span>
                 </a>
 
                 <nav class="hidden lg:flex items-center gap-1">

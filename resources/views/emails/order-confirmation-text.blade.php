@@ -1,4 +1,4 @@
-Sellerie Super Confort - Confirmation de commande
+Sellerie Epycuir - Confirmation de commande
 
 Bonjour {{ $order->customer_name }},
 
@@ -30,7 +30,7 @@ Tél : {{ $order->customer_phone }}
 Si vous avez des questions, contactez-nous :
 info@scelle.com
 
-(c) {{ date('Y') }} Sellerie Super Confort. Tous droits réservés.
+(c) {{ date('Y') }} Sellerie Epycuir. Tous droits réservés.
 www.scelle.com
 
-Cet e-mail a été envoyé pour confirmer votre commande sur Sellerie Super Confort.
+Cet e-mail a été envoyé pour confirmer votre commande sur Sellerie Epycuir.

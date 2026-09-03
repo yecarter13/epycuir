@@ -45,7 +45,7 @@
                               class="w-full px-4 py-2 border border-stable-300 rounded-lg text-sm focus:outline-none focus:border-safety focus:ring-1 focus:ring-safety resize-y"
                               placeholder="Écrivez votre message ici...">{{ old('message') }}</textarea>
                     @error('message') <p class="text-xs text-red-500 mt-1">{{ $message }}</p> @enderror
-                    <p class="text-xs text-stable-400 mt-1">Texte brut uniquement — il sera automatiquement mis en forme avec le modèle d'email Sellerie Super Confort.</p>
+                    <p class="text-xs text-stable-400 mt-1">Texte brut uniquement — il sera automatiquement mis en forme avec le modèle d'email Sellerie Epycuir.</p>
                 </div>
 
                 <div class="flex items-center gap-3 pt-2">

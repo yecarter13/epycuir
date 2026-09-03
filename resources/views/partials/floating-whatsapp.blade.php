@@ -2,7 +2,7 @@
     $waNumber = App\Models\SiteSetting::getValue('whatsapp_number');
 @endphp
 @if($waNumber)
-<a href="https://wa.me/{{ $waNumber }}?text={{ urlencode('Bonjour Sellerie Super Confort, j\'aimerais des informations.') }}"
+<a href="https://wa.me/{{ $waNumber }}?text={{ urlencode('Bonjour Sellerie Epycuir, j\'aimerais des informations.') }}"
    target="_blank" rel="noopener"
    class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-xl hover:shadow-green-500/30 hover:scale-110 transition-all duration-300"
    title="Discuter sur WhatsApp" aria-label="Discuter sur WhatsApp">
