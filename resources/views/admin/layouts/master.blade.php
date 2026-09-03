@@ -6,15 +6,28 @@
     <title>@yield('title', 'Admin — Sellerie Super Confort')</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <style>
-        #admin-sidebar.open { transform: translateX(0); }
+        #admin-sidebar {
+            display: none;
+        }
+        #admin-sidebar.open {
+            display: flex;
+            transform: translateX(0);
+        }
         @media (min-width: 1024px) {
-            #admin-sidebar { transform: none !important; position: relative !important; display: flex !important; flex-direction: column; }
+            #admin-sidebar {
+                display: flex !important;
+                position: relative !important;
+                transform: none !important;
+            }
+            #sidebar-overlay {
+                display: none !important;
+            }
         }
     </style>
 </head>
 <body class="font-sans antialiased bg-stable-50">
     <div class="min-h-screen flex">
-        <aside id="admin-sidebar" class="w-64 bg-stable-900 min-h-screen flex-shrink-0 fixed inset-y-0 left-0 z-50 flex flex-col transition-transform duration-300 -translate-x-full">
+        <aside id="admin-sidebar" class="w-64 bg-stable-900 min-h-screen flex-shrink-0 fixed inset-y-0 left-0 z-50 flex-col transition-transform duration-300">
             <div class="p-5 border-b border-stable-700">
                 <div class="flex items-center justify-between">
                     <a href="{{ route('admin.dashboard') }}" class="flex items-center gap-2.5">
