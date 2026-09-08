@@ -32,7 +32,7 @@
             </div>
             <div class="mt-8 lg:mt-0">
                 <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&q=80" alt="Notre atelier" class="rounded-2xl shadow-xl" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=600&q=80" alt="Notre atelier" class="rounded-2xl shadow-xl" loading="lazy">
                     <div class="absolute -bottom-6 -left-6 bg-safety rounded-2xl p-6 shadow-xl hidden lg:block">
                         <p class="text-3xl font-bold text-white">15+</p>
                         <p class="text-white/80 text-sm">Années d'excellence</p>

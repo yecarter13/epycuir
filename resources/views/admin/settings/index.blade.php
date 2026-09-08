@@ -18,8 +18,8 @@
                     <p class="text-xs text-stable-500 mt-0.5">Les clients paient directement sur le site via Stripe. Le panier complet et le parcours de paiement sont actifs.</p>
                 </div>
             </label>
-            <label class="flex items-start gap-3 p-4 border rounded-xl cursor-pointer transition-all {{ $orderMode === 'whatsapp' ? 'border-green-500 bg-green-50' : 'border-stable-200 hover:border-stable-300' }}">
-                <input type="radio" name="order_mode" value="whatsapp" class="mt-1 accent-green-500" {{ $orderMode === 'whatsapp' ? 'checked' : '' }}>
+            <label class="flex items-start gap-3 p-4 border rounded-xl cursor-pointer transition-all {{ $orderMode === 'whatsapp' ? 'border-blue-500 bg-blue-50' : 'border-stable-200 hover:border-stable-300' }}">
+                <input type="radio" name="order_mode" value="whatsapp" class="mt-1 accent-blue-500" {{ $orderMode === 'whatsapp' ? 'checked' : '' }}>
                 <div>
                     <p class="font-semibold text-sm text-stable-900">Commandes WhatsApp</p>
                     <p class="text-xs text-stable-500 mt-0.5">Le paiement en ligne est désactivé. Chaque bouton de commande redirige vers WhatsApp avec les détails du produit/panier pré-remplis. Le numéro WhatsApp ci-dessus doit être renseigné.</p>

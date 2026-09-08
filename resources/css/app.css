@@ -21,17 +21,17 @@
     --color-stable-900: #0a1929;
     --color-stable-950: #050e18;
 
-    --color-safety: #94a3b8;
-    --color-safety-dark: #64748b;
-    --color-safety-light: #cbd5e1;
+    --color-safety: #2563eb;
+    --color-safety-dark: #1d4ed8;
+    --color-safety-light: #60a5fa;
 
-    --color-gold: #94a3b8;
-    --color-gold-dark: #64748b;
-    --color-gold-light: #cbd5e1;
+    --color-gold: #2563eb;
+    --color-gold-dark: #1d4ed8;
+    --color-gold-light: #60a5fa;
 
-    --color-cta: #b45309;
-    --color-cta-dark: #92400e;
-    --color-cta-light: #d97706;
+    --color-cta: #2563eb;
+    --color-cta-dark: #1d4ed8;
+    --color-cta-light: #60a5fa;
 
     --color-cream: #f8fafc;
 }
