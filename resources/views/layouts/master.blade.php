@@ -79,8 +79,7 @@
     }
     </script>
 
-    <link rel="stylesheet" href="{{ asset('build/assets/app-RujeqNfL.css') }}">
-    <script type="module" src="{{ asset('build/assets/app-BvRk9kiK.js') }}"></script>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="font-sans antialiased bg-white text-stable-900">
 
