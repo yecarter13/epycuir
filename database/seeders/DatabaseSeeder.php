@@ -67,7 +67,7 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Filet simple en cuir de vachette — taille cheval', 'slug' => 'filet-simple-cuir-vachette', 'category_id' => 2,
                 'sku' => 'SCL-BRD-004', 'price' => 149.00, 'old_price' => null,
                 'compatibility' => 'Taille cheval — 4 tailles disponibles', 'image' => $img4,
-                'brand' => 'Sellerie Super Confort', 'is_new' => false, 'stock_quantity' => 25, 'rating' => 4.6, 'review_count' => 54,
+                'brand' => 'Sellerie Epycuir', 'is_new' => false, 'stock_quantity' => 25, 'rating' => 4.6, 'review_count' => 54,
                 'description' => '<p>Filet simple en cuir de vachette tanné végétal, avec mors à aiguille en inox inclus. Cousu main par nos selliers pour un confort parfait.</p><ul><li>Cuir tanné végétal souple</li><li>Coutures renforcées main</li><li>Mors en inox 316 L inclus</li><li>Montants et frontal galonnés</li></ul>',
             ],
             [
@@ -95,7 +95,7 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Licol en cuir avec plaque gravée', 'slug' => 'licol-cuir-plaque-gravee', 'category_id' => 4,
                 'sku' => 'SCL-LIC-008', 'price' => 89.00, 'old_price' => null,
                 'compatibility' => 'Taille cheval standard', 'image' => $img4,
-                'brand' => 'Sellerie Super Confort', 'is_new' => true, 'stock_quantity' => 18, 'rating' => 4.9, 'review_count' => 63,
+                'brand' => 'Sellerie Epycuir', 'is_new' => true, 'stock_quantity' => 18, 'rating' => 4.9, 'review_count' => 63,
                 'description' => '<p>Licol en cuir pleine fleur avec plaque en laiton gravée à votre nom ou au nom de votre cheval. Un cadeau élégant et durable.</p><ul><li>Cuir pleine fleur tanné végétal</li><li>Plaque en laiton gravée (texte de 20 caractères)</li><li>Fermoir et anneaux en laiton massif</li><li>Livré dans sa boîte cadeau</li></ul>',
             ],
             [
@@ -109,7 +109,7 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Harnais d\'attelage en cuir avec gourmette', 'slug' => 'harnais-attelage-cuir', 'category_id' => 5,
                 'sku' => 'SCL-HAR-010', 'price' => 1890.00, 'old_price' => 2100.00,
                 'compatibility' => 'Chevaux de trait et de loisir', 'image' => $img2,
-                'brand' => 'Sellerie Super Confort', 'is_new' => false, 'stock_quantity' => 2, 'rating' => 5.0, 'review_count' => 8,
+                'brand' => 'Sellerie Epycuir', 'is_new' => false, 'stock_quantity' => 2, 'rating' => 5.0, 'review_count' => 8,
                 'description' => '<p>Harnais d\'attelage complet en cuir de qualité supérieure, réalisé par nos selliers. Comprend collier, dossière, brancards, traits et reculement.</p><ul><li>Cuir façonné à chaud</li><li>Pièces de liaison laiton poli</li><li>Doublures en suédine respirante</li><li>Ajusté et réglé sur votre cheval</li></ul>',
             ],
             [

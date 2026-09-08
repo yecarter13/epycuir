@@ -145,8 +145,8 @@ class ShopController extends Controller
         $categoryTitle = null;
         $metaDescription = null;
         if ($currentCategory) {
-            $categoryTitle = $currentCategory->name . ' — Sellerie Super Confort';
-            $metaDescription = "Découvrez notre gamme de {$currentCategory->name} chez Sellerie Super Confort. Matériel équestre de qualité, livraison rapide en France.";
+            $categoryTitle = $currentCategory->name . ' — Sellerie Epycuir';
+            $metaDescription = "Découvrez notre gamme de {$currentCategory->name} chez Sellerie Epycuir. Matériel équestre de qualité, livraison rapide en France.";
         }
 
         return view('pages.shop', compact('categories', 'products', 'total', 'currentCategory', 'categoryTitle', 'metaDescription'));

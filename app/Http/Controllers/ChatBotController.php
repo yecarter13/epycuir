@@ -18,7 +18,7 @@ class ChatBotController extends Controller
         $userMessage = $request->input('message');
         $history = $request->input('history', []);
 
-        $systemPrompt = "Vous êtes l'assistant de recherche de la sellerie en ligne Sellerie Super Confort. "
+        $systemPrompt = "Vous êtes l'assistant de recherche de la sellerie en ligne Sellerie Epycuir. "
             . "Votre seul rôle est d'aider les clients à trouver le matériel équestre disponible sur notre site. "
             . "Vous avez accès à notre catalogue complet — les résultats affichent les meilleures correspondances. "
             . "Référencez uniquement les produits présents dans la liste fournie. "

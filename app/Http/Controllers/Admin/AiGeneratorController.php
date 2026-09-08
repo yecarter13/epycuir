@@ -103,13 +103,13 @@ class AiGeneratorController extends Controller
     {
         $parts = explode(' ', $name);
         $short = implode(' ', array_slice($parts, 0, 5));
-        return "{$short} — Sellerie Super Confort | Livraison rapide en France";
+        return "{$short} — Sellerie Epycuir | Livraison rapide en France";
     }
 
     private function generateMetaDescription(string $name, string $category): string
     {
         $parts = explode(' ', $name);
         $short = implode(' ', array_slice($parts, 0, 6));
-        return "Achetez {$short} sur Sellerie Super Confort. Article {$category} de qualité. Livraison rapide en France, garantie 12 mois.";
+        return "Achetez {$short} sur Sellerie Epycuir. Article {$category} de qualité. Livraison rapide en France, garantie 12 mois.";
     }
 }
