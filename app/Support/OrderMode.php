@@ -8,7 +8,7 @@ class OrderMode
 {
     public static function isWhatsapp(): bool
     {
-        return SiteSetting::getValue('order_mode', 'checkout') === 'whatsapp';
+        return true;
     }
 
     public static function isCheckout(): bool
