@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Paiement annulé — Sellerie Epycuir')
+@section('title', 'Paiement annulé — Pinault Sellerie')
 
 @section('content')
 

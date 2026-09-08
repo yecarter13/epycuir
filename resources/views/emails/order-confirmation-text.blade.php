@@ -1,4 +1,4 @@
-Sellerie Epycuir - Confirmation de commande
+Pinault Sellerie - Confirmation de commande
 
 Bonjour {{ $order->customer_name }},
 
@@ -30,7 +30,7 @@ Tél : {{ $order->customer_phone }}
 Si vous avez des questions, contactez-nous :
 info@scelle.com
 
-(c) {{ date('Y') }} Sellerie Epycuir. Tous droits réservés.
+(c) {{ date('Y') }} Pinault Sellerie. Tous droits réservés.
 www.scelle.com
 
-Cet e-mail a été envoyé pour confirmer votre commande sur Sellerie Epycuir.
+Cet e-mail a été envoyé pour confirmer votre commande sur Pinault Sellerie.

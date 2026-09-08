@@ -34,7 +34,7 @@ class OrderMode
     public static function productMessage($product, int $qty = 1): string
     {
         $ref = $product->sku ?? $product->slug;
-        return "Bonjour Sellerie Epycuir, je souhaite commander cet article :\n\n"
+        return "Bonjour Pinault Sellerie, je souhaite commander cet article :\n\n"
             . "- Produit : {$product->name}\n"
             . "- Référence : {$ref}\n"
             . "- Quantité : {$qty}\n"
@@ -44,7 +44,7 @@ class OrderMode
 
     public static function cartMessage($cartItems, float $total): string
     {
-        $text = "Bonjour Sellerie Epycuir, je souhaite commander les articles suivants :\n\n";
+        $text = "Bonjour Pinault Sellerie, je souhaite commander les articles suivants :\n\n";
         foreach ($cartItems as $item) {
             $text .= "- {$item['name']} x{$item['quantity']} - €" . number_format((float) $item['price'] * (int) $item['quantity'], 2) . "\n";
         }

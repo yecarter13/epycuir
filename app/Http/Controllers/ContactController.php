@@ -32,7 +32,7 @@ class ContactController extends Controller
         ]);
 
         try {
-            $body = "<p><strong>Nouveau message depuis le site Sellerie Epycuir</strong></p>"
+            $body = "<p><strong>Nouveau message depuis le site Pinault Sellerie</strong></p>"
                 . "<p><strong>Nom :</strong> " . e($validated['name']) . "<br>"
                 . "<strong>Email :</strong> " . e($validated['email']) . "<br>"
                 . "<strong>Téléphone :</strong> " . e($validated['phone'] ?? 'Non renseigné') . "<br>"

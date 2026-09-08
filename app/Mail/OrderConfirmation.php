@@ -24,7 +24,7 @@ class OrderConfirmation extends Mailable
     public function envelope(): Envelope
     {
         $fromAddress = config('mail.from.address') ?? 'info@scelle.com';
-        $fromName = config('mail.from.name') ?? 'Sellerie Epycuir';
+        $fromName = config('mail.from.name') ?? 'Pinault Sellerie';
         return new Envelope(
             from: new Address($fromAddress, $fromName),
             replyTo: [new Address($fromAddress, $fromName)],
